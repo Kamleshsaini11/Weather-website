@@ -1,0 +1,12 @@
+<%- include('partials/header') %>
+
+<p>Use this site to get your weather!</p>
+<form action="/" method="POST">
+    <input type="text" id="address" name="address" placeholder="Enter address" value="<%= defaultInputValue %>" >
+    <button type="submit">Search</button>
+</form>
+
+<p class="location"> <%= location %> </p>
+<p> <%= forecast%> </p>
+
+<%- include('partials/footer') %>   
