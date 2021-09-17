@@ -57,6 +57,7 @@ app.post('/', (req, res) => {
 })
 
 app.get('/about', (req, res) => {
+    console.log('Form about page')
     res.render('about', {
         title:'About Me  ',
         name:'kamlesh'
